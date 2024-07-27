@@ -51,6 +51,7 @@ class CleanArchitecture {
     for (final module in modules) {
       final moduleDir = Directory('${packagesDir.path}/$module');
       moduleDir.createSync(recursive: true);
+
       createModuleStructure(moduleDir.path, module);
 
       // Tạo các file cần thiết cho từng module
@@ -81,8 +82,18 @@ class CleanArchitecture {
 
   void createModuleStructure(String path, String moduleName) {
     // Tạo thư mục lib
-    final libDir = Directory('$path/lib');
-    libDir.createSync();
+    // final libDir = Directory('$path/lib');
+    // libDir.createSync();
+    var result = Process.runSync(
+      'flutter',
+      ['create', '--template=package', '.'],
+      workingDirectory: path,
+    );
+
+    if (result.exitCode != 0) {
+      print('Error creating Flutter package: ${result.stderr}');
+      return;
+    }
 
     // Tạo file pubspec.yaml
     String pubspecContent = '''

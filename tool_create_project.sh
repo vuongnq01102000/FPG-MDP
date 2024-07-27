@@ -100,7 +100,7 @@ create_project() {
       cd "$project_path" || exit
 
     #  Chạy script Dart để tạo dự án
-      if dart run ~/Devloper/tool_create_prj_clean_architecture/bin/tool_create_prj_clean_architecture.dart "$project_path" "$project_name" "$style_pattern"; then
+      if dart run tool_create_prj_clean_architecture/bin/tool_create_prj_clean_architecture.dart "$project_path" "$project_name" "$style_pattern"; then
           echo "Project $project_name with $design_pattern_name  has been created at $project_path"
         return
       else

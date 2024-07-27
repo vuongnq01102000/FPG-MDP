@@ -14,7 +14,7 @@
 ## Cài đặt
 
 1. Clone repository này về máy của bạn:
-`git clone https://github.com/vuongnq01102000/FPG-MDP`
+`git clone https://github.com/vuongnq01102000/FPG-MDP.git`
 2. Di chuyển vào thư mục chứa script:
 `cd [tên_thư_mục]`
 3. Cấp quyền thực thi cho script:

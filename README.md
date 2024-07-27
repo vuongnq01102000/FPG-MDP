@@ -22,8 +22,17 @@
 
 ## Sử dụng
 
-1. Chạy script bằng lệnh: `./tool_create_project.sh`
-2. Làm theo các hướng dẫn trên màn hình:
+1. Chạy script bằng lệnh: 
+   - Macos: `./tool_create_project.sh`
+   - Window:
+    - Bạn hãy cài đặt Git Bash:
+    	•	Tải Git for Windows từ trang gitforwindows.org.
+	    •	Cài đặt Git for Windows, bao gồm Git Bash.
+	  -	Chạy script với Git Bash:
+	    •	Mở Git Bash.
+	    •	Điều hướng đến thư mục chứa file .sh của bạn: `cd path/to/your/script`
+     	•	Chạy script: `./create_flutter_project.shscript`
+3. Làm theo các hướng dẫn trên màn hình:
 - Nhập đường dẫn để lưu dự án (mặc định là thư mục hiện tại)
 - Nhập tên dự án (mặc định là "example_project")
 - Chọn mẫu thiết kế: Clean Architecture, MVVM, hoặc MVC
